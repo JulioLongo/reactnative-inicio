@@ -1,5 +1,4 @@
 import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 import Main from './pages/Main';
@@ -21,14 +20,6 @@ const Routes = createAppContainer(
                     backgroundColor: '#7159c1',
                 },
             },
-            // headerLayoutPreset: 'center',
-            // headerBackTitleVisible: false,
-            // defaultNavigationOptions: {
-            //     headerStyle: {
-            //         backgroundColor: '#7159c1',
-            //     },
-            //     headerTintColor: '#fff',
-            // },
         }
     )
 );

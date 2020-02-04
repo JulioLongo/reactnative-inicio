@@ -1,6 +1,7 @@
 import React from 'react';
 import { Stylesheet, Text, View } from 'react-native';
 
+import './config/StatusBarConfig';
 import './config/ReactototronConfig';
 import Routes from './routes';
 
