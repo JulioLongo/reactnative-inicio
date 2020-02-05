@@ -2,13 +2,13 @@ import { createAppContainer } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 import Main from './pages/Main';
-import User from './pages/User';
+import Pokedex from './pages/User';
 
 const Routes = createAppContainer(
     createBottomTabNavigator(
         {
             Main,
-            User,
+            Pokedex,
         },
         {
             tabBarOptions: {
