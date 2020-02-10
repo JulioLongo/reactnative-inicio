@@ -11,20 +11,28 @@ export default function Users() {
     useEffect(() => {
         async function loadPokemons() {
             const response = await api.get(`/pokemon`);
-            console.tron.log(response.data.results);
 
             setPokemons(response.data.results);
-            console.tron.log(pokemons);
         }
         loadPokemons();
     }, []);
 
+    console.tron.log(pokemons);
+
     return (
         <Container>
+            {pokemons.map(poke => (
+                <Text>{poke.name}</Text>
+            ))}
             <Pokemons
                 data={pokemons}
-                keyExtractor={user => user.url}
-                renderItem={({ item }) => <CardPokemon url={item.url} />}
+                keyExtractor={pokemon => pokemon.url}
+                renderItem={poke => (
+                    <CardPokemon
+                        pokeUrl={poke.item.url}
+                        pokeName={poke.item.name}
+                    />
+                )}
             />
         </Container>
     );

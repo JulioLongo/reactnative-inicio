@@ -3,10 +3,12 @@ import { View, Text } from 'react-native';
 
 // import { Container } from './styles';
 
-export default function CardPokemon({ children }) {
+export default function CardPokemon({ pokeName, pokeUrl }) {
+    // console.tron.log();
     return (
         <View>
-            <Text>{this.props.url}</Text>
+            <Text>{pokeUrl}</Text>
+            <Text>{pokeName}</Text>
         </View>
     );
 }
