@@ -32,11 +32,18 @@ export const List = styled.FlatList.attrs({
     margin-top: 40px;
 `;
 
+export const Menus = styled.View`
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 32px;
+`;
+
 export const MenuButton = styled(RectButton)`
     height: 60px;
-    width: 160px;
-    margin-right: 10px;
-    margin-bottom: 20px;
+    width: 49%;
+    margin-bottom: 8px;
     border-radius: 12px;
     background: #74d345;
     justify-content: center;
